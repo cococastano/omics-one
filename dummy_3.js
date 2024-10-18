@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   if (page) {
     const canvasHtml = `
-      <div tlg-kaleidoscope-canvas tlg-kaleidoscope-mode="mouse" tlg-kaleidoscope-segments="8" style="width: 100%; height: 700px; position: relative;">
+      <div tlg-kaleidoscope-canvas tlg-kaleidoscope-mode="mouse" tlg-kaleidoscope-segments="8" style="width: 100%; height: 100vh; position: relative;">
         <h1 class="kaleidoscope-header" id="dynamic-header">Blood Data from Anyone, Anywhere, Anytime</h1>
         <img tlg-kaleidoscope-image id="kaleidoscope-image" src="https://images.squarespace-cdn.com/content/6700ec5eab9f781ee314a467/5375552f-92ce-4db3-81df-85f945713098/test+image.png" style="display:none;" />
       </div>`;
