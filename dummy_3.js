@@ -99,18 +99,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  const page = document.querySelector('.sqs-block-content');
+    const section = document.querySelector('section');  // Target the first section
   
-  if (page) {
-    const canvasHtml = `
-      <div tlg-kaleidoscope-canvas tlg-kaleidoscope-mode="mouse" tlg-kaleidoscope-segments="8" style="width: 100%; height: 100vh; position: relative;">
-        <h1 class="kaleidoscope-header" id="dynamic-header">Blood Data from Anyone, Anywhere, Anytime</h1>
-        <img tlg-kaleidoscope-image id="kaleidoscope-image" src="https://images.squarespace-cdn.com/content/6700ec5eab9f781ee314a467/5375552f-92ce-4db3-81df-85f945713098/test+image.png" style="display:none;" />
-      </div>`;
-      
-    page.insertAdjacentHTML('beforeend', canvasHtml);
-  }
-});
+    if (section) {
+      const canvasHtml = `
+        <div tlg-kaleidoscope-canvas tlg-kaleidoscope-mode="mouse" tlg-kaleidoscope-segments="8" style="width: 100%; height: 700px; position: relative;">
+          <h1 class="kaleidoscope-header" id="dynamic-header" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10;">Blood Data from Anyone, Anywhere, Anytime</h1>
+          <img tlg-kaleidoscope-image id="kaleidoscope-image" src="https://images.squarespace-cdn.com/content/6700ec5eab9f781ee314a467/5375552f-92ce-4db3-81df-85f945713098/test+image.png" style="display:none;" />
+        </div>`;
+        
+      section.insertAdjacentHTML('afterbegin', canvasHtml);
+      section.style.height = '100vh'; // Ensure the section takes the full screen height
+    }
+  });
 
 
 document.addEventListener("DOMContentLoaded", function () {
