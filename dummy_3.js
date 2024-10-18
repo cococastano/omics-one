@@ -109,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>`;
         
       section.insertAdjacentHTML('afterbegin', canvasHtml);
-      section.style.height = '100vh'; // Ensure the section takes the full screen height
     }
   });
 
