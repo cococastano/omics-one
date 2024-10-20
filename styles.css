@@ -1,0 +1,119 @@
+@media (max-width: 480px) {
+    .content {
+      padding: 5px;
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #omicsLogo {
+      top: 40px !important;   /* Adjust the position when shrunk */
+      left: 20px !important;  /* Adjust left position */
+      opacity: 1 !important;  /* Ensure the logo is always visible */
+      visibility: visible !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Center the arrow */
+    #down-arrow {
+      left: 50% !important;
+      transform: translateX(-50%) !important;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #generic-block {
+      height: 10px !important; /* Adjust this value to make the bar thinner */
+      opacity: 0;  /* Ensure the block is initially hidden */
+      visibility: hidden;  /* Make sure it’s invisible initially */
+    }
+  }
+  
+  /* For all mobile screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .kaleidoscope-header {
+      font-size: 8vw !important;  /* Adjust font size for mobile */
+      top: 20% !important;  /* Move the text higher */
+      transform: translate(-50%, 0) !important;  /* Remove vertical translation */
+      margin-top: 0 !important;  /* Reset margin */
+    }
+  }
+  
+  header {
+    display: none !important;
+  }
+  
+  #kaleidoscope-header {
+    z-index: 1 !important;  /* Ensure kaleidoscope header is above other elements */
+  }
+  
+  footer a {
+    text-decoration: none !important;
+  }
+  
+  .background-pause-button {
+    display: none !important;
+  }
+  
+  #page {
+    overflow-x: hidden;
+  }
+  
+  .burger-box .burger-inner div {
+    background-color: white !important;
+  }
+  
+  .kaleidoscope-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 4vw;  /* Smaller font size */
+    line-height: 1.5 !important;  /* Line spacing */
+    letter-spacing: 2px !important;  /* Letter spacing */
+    font-weight: bold;
+    z-index: 10;
+    text-align: center;
+    max-width: 80vw;   /* Slightly restrict width for fewer breaks */
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  /* Ensure proper positioning */
+  #kaleidoscopeCanvas {
+    position: fixed;  /* Fixed to top after scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 9;  /* Will appear under elements with higher z-index */
+  }
+  
+  #kaleidoscopeCanvas.fixed {
+    z-index: 10;  /* Will appear above everything */
+  }
+  
+  #logo {
+    position: fixed;
+    top: 20px;
+    left: 50px;
+    z-index: 100; /* Higher z-index to stay above the kaleidoscope */
+    opacity: 1;  /* Ensure logo is fully visible */
+    visibility: visible;  /* Keep it visible */
+  }
+  
+  #burgerMenu {
+    position: fixed;
+    top: 20px;
+    right: 50px;
+    z-index: 101; /* Higher z-index to stay above both */
+  }
+  
+  #omicsLogo img {
+    opacity: 1 !important;  /* Ensure logo is always visible */
+    visibility: visible !important;  /* Ensure visibility */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
